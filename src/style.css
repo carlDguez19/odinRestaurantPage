@@ -1,28 +1,57 @@
 body{
+    background-color: black;
     margin: 0;
     padding: 0;
 }
 #content{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background: url('../src/assets/restaurant.jpg');
+    background-size: cover;
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    color: purple;
     margin: 0;
     padding: 0;
 }
 
-img{
+.restName{
+    position: relative;
+    top: 25px;
+    z-index: 3;
+}
+
+.imgRest{
     width: auto;
     height: 250px;
     object-fit: cover;
     margin: 10px;
+    z-index: 3;
 }
 
 .desc{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    color: #ffffd0;
-    margin: 20px 70px;
+    font-size: 1.3rem;
+    margin: 0 20%;
+    z-index: 3;
+}
+
+.banner{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 100%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 130px;
+}
+
+li{
+    margin: 0 10px;
 }
