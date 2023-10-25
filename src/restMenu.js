@@ -5,6 +5,7 @@ export function restMenu(){
     const menuHeader = document.createElement('h1');
     menuHeader.textContent = "MENU";
     menuDiv.appendChild(menuHeader);
+    menuDiv.classList.add('menuHeader');
     content.appendChild(menuDiv);
 
     const beveragesDiv = document.createElement('div');
@@ -22,9 +23,9 @@ export function restMenu(){
     hnhImg.alt = 'A tall glass of iced tea';
     hnhImg.classList.add('teaImg');
     const hnhDesc = document.createElement('p');
-    hnhDesc.textContent = 'the best balance of sweet and unsweet tea.';
+    hnhDesc.textContent = 'the best balance of sweet \nand unsweet tea.';
     hnhTeaDiv.appendChild(hnhHeader);
-    //hnhTeaDiv.appendChild(hnhImg);//too big if not modified with css
+    hnhTeaDiv.appendChild(hnhImg);//too big if not modified with css
     hnhTeaDiv.appendChild(hnhDesc);
     hnhTeaDiv.classList.add('menuItem');
     content.appendChild(hnhTeaDiv);
@@ -46,27 +47,30 @@ export function restMenu(){
     const wingDesc = document.createElement('p');
     wingDesc.textContent = 'the crispiest, perfectly spicy, and most delectable wangs youve ever had';
     wingDiv.appendChild(wingHeader);
-    wingDiv.appendChild(wingImg);
+    wingDiv.appendChild(wingImg);//too big if not modified with css
     wingDiv.appendChild(wingDesc);
     wingDiv.classList.add('menuItem');
+    content.appendChild(wingDiv);
 
     const entreeDiv = document.createElement('div');
     const entreeHeader = document.createElement('h2');
     entreeHeader.textContent = 'Entree';
     entreeDiv.appendChild(entreeHeader);
     entreeDiv.classList.add('menuSection');
+    content.appendChild(entreeDiv);
     
     const salmonDiv = document.createElement('div');
     const salmonHeader = document.createElement('h3');
     salmonHeader.textContent = "Feesh";
-    const slamonImg = document.createElement('img');
+    const salmonImg = document.createElement('img');
     salmonImg.src = '../src/assets/salmon.jpg';
     salmonImg.alt = 'A piece of salmon cooked perfectly.';
     salmonImg.classList.add('teaImg');
     const salmonDesc = document.createElement('p');
     salmonDesc.textContent = 'Salmon that was living in bikini bottom...until it wasnt';
     salmonDiv.appendChild(salmonHeader);
-    salmonDiv.appendChild(salmonImg);
+    salmonDiv.appendChild(salmonImg);//too big if not modified with css
     salmonDiv.appendChild(salmonDesc);
     salmonDiv.classList.add('menuItem');
+    content.appendChild(salmonDiv);
 }

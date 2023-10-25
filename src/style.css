@@ -37,6 +37,13 @@ body{
     z-index: 3;
 }
 
+.teaImg{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
 .desc{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
@@ -73,4 +80,30 @@ ul{
 li{
     margin: 0 10px;
     cursor: pointer;
+}
+
+.menuHeader{
+    background-color: blue;
+    width: 25%;
+    margin: 100px 0;
+    border-radius: 15px;
+}
+
+.menuItem{
+    margin-bottom: 80px;
+    margin-top: 25px;
+}
+
+.menuItem, .menuSection{
+    background-color: orange;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+}
+.menuSection{
+    width: 60%;
+}
+.menuItem:last-child{
+    margin-bottom: 150px;
 }
