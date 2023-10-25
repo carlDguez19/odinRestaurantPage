@@ -1,6 +1,9 @@
-export const liHome = document.createElement('li').textContent = HOME;
-export const liMenu = document.createElement('li').textContent = MENU;
-export const liContact = document.createElement('li').textContent = CONTACT;
+export const liHome = document.createElement('li');
+liHome.textContent = 'HOME';
+export const liMenu = document.createElement('li');
+liMenu.textContent = 'MENU';
+export const liContact = document.createElement('li');
+liContact.textContent = 'CONTACT';
 //if ul does not append li's inside the function then append all li's here
 export function bannerMain(){
     const ulNav = document.createElement('ul');
