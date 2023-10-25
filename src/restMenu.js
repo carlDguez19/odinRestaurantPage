@@ -5,12 +5,14 @@ export function restMenu(){
     const menuHeader = document.createElement('h1');
     menuHeader.textContent = "MENU";
     menuDiv.appendChild(menuHeader);
+    content.appendChild(menuDiv);
 
     const beveragesDiv = document.createElement('div');
     const beveragesHeader = document.createElement('h2');
     beveragesHeader.textContent = 'Beverages';
     beveragesDiv.appendChild(beveragesHeader);
     beveragesDiv.classList.add('menuSection');
+    content.appendChild(beveragesDiv);
 
     const hnhTeaDiv = document.createElement('div');
     const hnhHeader = document.createElement('h3');
@@ -22,15 +24,17 @@ export function restMenu(){
     const hnhDesc = document.createElement('p');
     hnhDesc.textContent = 'the best balance of sweet and unsweet tea.';
     hnhTeaDiv.appendChild(hnhHeader);
-    hnhTeaDiv.appendChild(hnhImg);
+    //hnhTeaDiv.appendChild(hnhImg);//too big if not modified with css
     hnhTeaDiv.appendChild(hnhDesc);
     hnhTeaDiv.classList.add('menuItem');
+    content.appendChild(hnhTeaDiv);
 
     const appsDiv = document.createElement('div');
     const appsHeader = document.createElement('h2');
     appsHeader.textContent = 'Appetizers';
     appsDiv.appendChild(appsHeader);
     appsDiv.classList.add('menuSection');
+    content.appendChild(appsDiv);
 
     const wingDiv = document.createElement('div');
     const wingHeader = document.createElement('h3');
@@ -52,17 +56,17 @@ export function restMenu(){
     entreeDiv.appendChild(entreeHeader);
     entreeDiv.classList.add('menuSection');
     
-    const entreeDiv = document.createElement('div');
-    const entreeHeader = document.createElement('h3');
-    entreeHeader.textContent = "Feesh";
-    const entreeImg = document.createElement('img');
-    entreeImg.src = '../src/assets/salmon.jpg';
-    entreeImg.alt = 'A piece of salmon cooked perfectly.';
-    entreeImg.classList.add('teaImg');
-    const entreeDesc = document.createElement('p');
-    entreeDesc.textContent = 'Salmon that was living in bikini bottom...until it wasnt';
-    entreeDiv.appendChild(entreeHeader);
-    entreeDiv.appendChild(entreeImg);
-    entreeDiv.appendChild(entreeDesc);
-    entreeDiv.classList.add('menuItem');
+    const salmonDiv = document.createElement('div');
+    const salmonHeader = document.createElement('h3');
+    salmonHeader.textContent = "Feesh";
+    const slamonImg = document.createElement('img');
+    salmonImg.src = '../src/assets/salmon.jpg';
+    salmonImg.alt = 'A piece of salmon cooked perfectly.';
+    salmonImg.classList.add('teaImg');
+    const salmonDesc = document.createElement('p');
+    salmonDesc.textContent = 'Salmon that was living in bikini bottom...until it wasnt';
+    salmonDiv.appendChild(salmonHeader);
+    salmonDiv.appendChild(salmonImg);
+    salmonDiv.appendChild(salmonDesc);
+    salmonDiv.classList.add('menuItem');
 }
