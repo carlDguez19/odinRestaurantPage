@@ -2,6 +2,7 @@ import { liHome } from "./restBanner";
 import { liMenu } from "./restBanner";
 import { liContact } from "./restBanner";
 import { bannerMain } from "./restBanner";
+import { restContact } from "./restContact";
 import { restLandingPage } from "./restHome";
 import { restMenu } from "./restMenu";
 
@@ -16,6 +17,11 @@ liHome.addEventListener('click', function(){
 liMenu.addEventListener('click', function(){
     clearContent();
     restMenu();
+});
+
+liContact.addEventListener('click', function(){
+    clearContent();
+    restContact();
 });
 
 function clearContent(){

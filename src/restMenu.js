@@ -23,7 +23,7 @@ export function restMenu(){
     hnhImg.alt = 'A tall glass of iced tea';
     hnhImg.classList.add('teaImg');
     const hnhDesc = document.createElement('p');
-    hnhDesc.textContent = 'the best balance of sweet \nand unsweet tea.';
+    hnhDesc.textContent = 'the best balance of sweet and unsweet tea.';
     hnhTeaDiv.appendChild(hnhHeader);
     hnhTeaDiv.appendChild(hnhImg);//too big if not modified with css
     hnhTeaDiv.appendChild(hnhDesc);

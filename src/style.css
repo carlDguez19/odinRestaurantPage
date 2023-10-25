@@ -107,3 +107,21 @@ li{
 .menuItem:last-child{
     margin-bottom: 150px;
 }
+
+
+.contactContainer{
+    margin: 25px 0;
+    width: 50%;
+    height: auto;
+    background-color: orange;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 15px;
+}

@@ -3,6 +3,7 @@ export function restContact(){
 
     const contactHeader = document.createElement('h1');
     contactHeader.textContent = 'Contact... me?';
+    contactHeader.classList.add('menuHeader');
     //contentDiv.appendChild(contactHeader);
 
     const contactCont = document.createElement('div');
@@ -25,9 +26,17 @@ export function restContact(){
     infoCont.appendChild(contEmail);
 
     const contactPfp = document.createElement('img');
-    contactPfp.src = "../assets/contPfp.jpg";
+    contactPfp.classList.add('teaImg');
+    contactPfp.src = "../src/assets/contPfp.jpg";
     contactPfp.alt = "a walking zombie";
 
+    const wrapInfoCont = document.createElement('div');
+    wrapInfoCont.classList.add('wrapCont');
+    wrapInfoCont.appendChild(infoCont);
+    wrapInfoCont.appendChild(contactPfp);
+    
+    contactCont.appendChild(wrapInfoCont);
 
-
+    contentDiv.appendChild(contactHeader);
+    contentDiv.appendChild(contactCont);
 }
