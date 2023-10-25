@@ -3,7 +3,6 @@ export function restLandingPage(){
 
     const frostCont = document.createElement('div');
     frostCont.classList.add('frostedContainer');
-    //contentDiv.appendChild(frostCont);
 
     const head1 = document.createElement('h1');
     head1.textContent = "KBNO NOMNOMS";
